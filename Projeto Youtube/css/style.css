@@ -1,0 +1,249 @@
+/* 
+
+Preparando terreno para começar a estilizar 
+
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Roboto, Arial;
+}
+
+body {
+    margin: 0px;
+}
+
+/* 
+
+Editando seção dos vídeos 
+
+*/
+
+.video-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 3rem 1rem;
+    padding: 3rem 0;
+    margin: 0 1.5rem;
+}
+
+.video-section:first-child {
+    border-top: none;
+}
+
+/* 
+
+Editando cada vídeo 
+
+*/
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.thumbnail {
+    position: relative;
+    display: flex;
+}
+
+.thumbnail::before {
+    content: attr(data-duration);
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background-color: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: .1em .3em;
+    border-radius: .3em;
+    font-size: .9rem;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: 100%;
+    min-width: 250px;
+    min-height: 150px;
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.thumbnail-image:hover {
+    border-radius: 0;
+}
+
+.video-bottom-section {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.channel-icon {
+    margin-right: .75rem;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #aaa;
+}
+
+.video-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.video-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .5rem;
+    text-decoration: none;
+    color: rgb(60, 60, 60);
+}
+
+.video-channel-name {
+    margin-bottom: .1rem;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+.video-channel-name:hover {
+    color: #111;
+}
+
+.video-channel-name, .video-metadata {
+    color: #555;
+}
+
+.video-section-title {
+    grid-column: 1 / -1;
+    margin: -.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 .5rem;
+}
+
+.video-section-title-close {
+    border: none;
+    background: none;
+    padding: 0px;
+    font-size: 2rem;
+    color: #555;
+    cursor: pointer;
+}
+
+/* 
+
+Estilizando seção de categorias 
+
+*/
+
+.categories {
+    padding: 0.4rem 2rem;
+}
+
+.category-section {
+    display: flex;
+    overflow: hidden;
+}
+
+.category {
+    margin-right: 1rem;
+    word-wrap: none;
+    white-space: nowrap;
+    border: none;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    padding: .6rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #222;
+    cursor: pointer;
+}
+
+.category:hover {
+    background-color: #ddd;
+}
+
+.category.active {
+    background-color: black;
+    color: white;
+}
+
+.category:last-child {
+    margin-right: 0;
+}
+
+/* 
+
+Estilizando Header 
+
+*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.youtube-logo {
+    height: 40px;
+}
+
+.search-bar {
+    display: flex;
+    flex-grow: 1;
+    margin: 0 20% 0 20%;
+}
+
+.search-input {
+    width: 100%;
+    font-size: inherit;
+    padding: .8rem;
+    border: 1px solid rgb(200, 200, 200);
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid rgb(200, 200, 200);
+    background-color: #f8f8f8;
+    border-left: none;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    cursor: pointer;
+}
+
+.search-btn img {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.search-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.menu-icons {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.menu-icons a img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-icons a .menu-channel-icon {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
