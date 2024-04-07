@@ -2,4 +2,56 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-color: blueviolet;
+}
+
+.sidebar-pos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.img-sidebar {text-align: center}
+
+.img-sidebar img{
+    width: 80%;
+    border-radius: 50%;
+    border: 8px solid rgb(155, 49, 255);
+}
+
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu a {
+    color: white;
+    opacity: 0.6;
+    font-size: 19px;
+    display: block;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.menu a.selected {
+    opacity: 1;
+}
+
+.menu a:not(.selected):hover {
+    opacity: 0.9;
+    transition-duration: 200ms;
+    transition-property: opacity;
 }
