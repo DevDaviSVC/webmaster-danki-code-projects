@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* Aqui estou estilizando a sessão vitrine */
+
+body {
+    background-color: rgb(54, 2, 175);
+}
+
+.loja {
+    color: white;
+    display: flex;
+    height: 100%;
+}
+
+div.vitrine {
+    text-align: center;
+    padding-bottom: 20px;
+    width: 50%;
+    background-color: rgb(105, 0, 131);
+}
+
+div.vitrine h2, div.carrinho-section h2 {
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+}
+
+.produto-single .img-wraper img {
+    width: 100%;
+}
+
+.produtos {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.produto-single {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+}
+
+.produto-single p {
+    margin: 10px 0;
+}
+
+.produto-single a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: rgb(65, 0, 78);
+}
+
+/* Aqui estou estilizando a sessão carrinho-section */
+
+.carrinho-section {
+    width: 50%;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(54, 2, 175);
+}
+
+.carrinho {
+    width: 100%;
+    margin: 20px 0;
+    padding: 0 2%;
+}
+
+@media screen and (max-width: 900px) {
+    .loja {
+        display: block;
+    }
+
+    div.vitrine {
+        width: 100%;
+    }
+
+    .carrinho-section {
+        width: 100%;
+    }
+}
