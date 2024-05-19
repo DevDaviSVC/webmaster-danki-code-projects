@@ -3,8 +3,10 @@
 
     <head>
 
+        
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <title>Spotify</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
         <link href="css/style.css" rel="stylesheet" />
 
@@ -25,19 +27,198 @@
                     <img src="img/logo.png" />
                 </div><!-- sidebar__logo -->
 
-                <div class="sidebar__menu">
-                    <a href="#"><i class="fas fa-home"></i>Início</a>
-                    <a href="#"><i class="fas fa-search"></i>Buscar</a>
+                <div class="sidebar__menu" id="sidebar__menu">
+                    <a class="sidebar__menu__selecionado" href="#"><i class="fas fa-home"></i>Início</a>
+                    <a id="searchBtn" href="#"><i class="fas fa-search"></i>Buscar</a>
                     <a href="#"><i class="fas fa-database"></i>Biblioteca</a>
                 </div><!-- sidebar__menu -->
+
+                <div class="sidebar__menu">
+
+                    <p class="sidebar__menu__title">Playlists</p>
+
+                    <div class="sidebar__menu__item">
+                        <div class="sidebar__menu__item__componente">
+                            +
+                        </div>
+                        <span>Criar Playlist</span>
+                    </div><!-- sidebar__menu__item-->
+
+                    <div class="sidebar__menu__item">
+                        <img src="img/musicas_curtidas.png" />
+                        <span>Músicas Curtidas</span>
+                    </div><!-- sidebar__menu__item-->
+
+                </div><!-- sidebar__menu-->
+
+                <div class="sidebar__playlists">
+
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+
+                </div><!-- sidebar__playlists -->
+
+                <div class="sidebar__playlists">
+
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+
+                </div><!-- sidebar__playlists -->
+
+                <div class="sidebar__playlists">
+
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+                    <a href="">Playlist 1</a>
+
+                </div><!-- sidebar__playlists -->
 
             </div><!-- sidebar-wraper -->
 
         </div><!-- sidebar -->
 
+        <div class="main">
+
+            <div class="main-wraper">
+
+                <div class="main__row">
+
+                    <div class="main__row__title">
+                        <h2>Paradas</h2>
+                    </div><!-- main__row__title -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50global.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col">
+                        <img src="img/top50global.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                </div><!-- main__row -->
+
+                <div class="main__row">
+
+                    <div class="main__row__title">
+                        <h2>Histórico</h2>
+                    </div><!-- main__row__title -->
+
+                    <div class="main__col">
+                        <img src="img/top50.png" />
+                        <h3>As 50 mais tocadas</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col" data-image="img/gunsrools.png" data-artist="Guns N Roses" data-song="Sweet Child Of Mine" data-file="assets/music.mp3">
+                        <img src="img/gunsrools.png" />
+                        <h3>This is Guns N' Roses</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                    <div class="main__col" data-image="img/rocky.png" data-artist="Survivor" data-song="Eye of the Tiger" data-file="assets/musica2.mp3">
+                        <img src="img/rocky.png" />
+                        <h3>Rocky's Theme</h3>
+                        <p>Aqui vai a descrição da playlist...</p>
+                    </div><!-- main__col -->
+
+                </div><!-- main__row -->
+
+            </div><!-- main-wraper -->
+
+        </div><!-- main -->
+
+        <div class="player">
+
+            <div class="player__artist">
+
+            </div><!-- player__artist -->
+
+            <div class="player__control">
+
+                <div class="player__control__buttons">
+                    <a href=""><i class="fas fa-backward"></i></a>
+                    <a id="playBtn" href=""><i class="fas fa-play"></i></a>
+                    <a style="display: none;" id="pauseBtn" href=""><i class="fas fa-pause"></i></a>
+                    <a href=""><i class="fas fa-forward"></i></a>
+                </div><!-- player__control__buttons -->
+
+                <div class="player__control__progress">
+                    <div class="player__control__progress_2"></div>
+                </div><!-- player__control__progress -->
+
+            </div><!-- player__control -->
+
+        </div><!-- player -->
+
+        <div id="search-box" class="search-box">
+            <div class="input-wraper">
+                <i class="fas fa-search"></i>
+                <input type="text" name="search" placeHolder="Sua música preferida..."/>
+            </div><!-- input-wraper -->
+        </div><!-- search-box -->
+
+        <audio controls id="audioplayer" style="position: absolute; left: 0; top: 0; display: none;">
+        </audio>
+
         <script src="js/all.min.js"></script>
         <script src="js/script.js"></script>
-
     </body>
 
 </html>
