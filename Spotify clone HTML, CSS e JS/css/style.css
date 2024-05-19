@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Divs básicas */
+
+/* Estilizando sidebar */
+
+.sidebar {
+    float: left;
+    width: 250px;
+    padding: 10px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.sidebar-wraper {
+    padding-bottom: 200px;
+}
+
+.sidebar__menu {
+    margin: 20px 0;
+    color: rgb(190, 190, 190);
+}
+
+.sidebar__logo img {
+    width: 100%;
+    max-width: 250px;
+}
+
+.sidebar__menu a {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
